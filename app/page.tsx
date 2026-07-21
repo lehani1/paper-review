@@ -167,7 +167,7 @@ export default function Home() {
       <header className="topbar">
         <button className="wordmark" onClick={() => jump("abstract")} aria-label="Back to paper top">
           <span className="wordmark-mark">R</span>
-          <span>RAG, explained</span>
+          <span>paper-review/rag</span>
         </button>
         <div className="topbar-actions">
           <span className="read-percent">{Math.round(progress)}% read</span>
