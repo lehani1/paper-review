@@ -343,7 +343,7 @@ export default function Home() {
             </div>
             <div className="augmentation-card">
               <div className="flow-line">
-                {augmentationPatterns[augmentation].line.map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong>{index < augmentationPatterns[augmentation].line.length - 1 && <i>→</i>}</div>)}
+                {augmentationPatterns[augmentation].line.map((item, index) => <div key={`${item}-${index}`}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong>{index < augmentationPatterns[augmentation].line.length - 1 && <i>→</i>}</div>)}
               </div>
               <p className="augmentation-copy">{augmentationPatterns[augmentation].copy}</p>
               <div className="augmentation-meta"><div><span>Best for</span>{augmentationPatterns[augmentation].use}</div><div><span>Representative methods</span>{augmentationPatterns[augmentation].examples}</div></div>
