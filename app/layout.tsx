@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RAG, Explained — An Interactive Research Paper",
+  title: "Paper Review — Interactive Research Papers",
   description:
-    "An interactive, visual companion to Retrieval-Augmented Generation for Large Language Models: A Survey.",
+    "A growing collection of visual, interactive companions to important research papers.",
   openGraph: {
-    title: "RAG, Explained",
-    description: "Read the landmark RAG survey as an interactive research paper.",
-    type: "article",
+    title: "Paper Review",
+    description: "Research papers, made readable through interactive visual companions.",
+    type: "website",
   },
   twitter: {
     card: "summary",
-    title: "RAG, Explained",
-    description: "An interactive companion to the RAG survey.",
+    title: "Paper Review",
+    description: "A growing collection of interactive research paper reviews.",
   },
 };
 

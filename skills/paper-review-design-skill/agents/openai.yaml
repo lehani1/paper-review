@@ -1,0 +1,5 @@
+interface:
+  display_name: "Paper Review Design"
+  short_description: "Build consistent interactive research paper reviews"
+  default_prompt: "Use $paper-review-design-skill to add an interactive paper review to my series."
+
