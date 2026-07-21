@@ -53,12 +53,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .paper-header { padding: 70px 70px 54px; border-bottom: 1px solid var(--line); text-align: center; }
 .paper-kicker { display: flex; justify-content: space-between; margin-bottom: 44px; color: var(--blue); font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 .paper-header h1 { max-width: 700px; margin: 0 auto; font-size: clamp(40px, 5vw, 64px); font-weight: 500; line-height: .98; letter-spacing: -.055em; }
-.subtitle { max-width: 580px; margin: 24px auto 13px; color: var(--muted); font-size: 19px; line-height: 1.5; }
-.authors { color: var(--muted); font-family: var(--sans); font-size: 11px; letter-spacing: .05em; }
-.paper-meta { margin-top: 42px; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); text-align: left; }
-.paper-meta span { padding: 14px; color: var(--muted); border-right: 1px solid var(--line); font-family: var(--sans); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
-.paper-meta span:last-child { border: 0; }
-.paper-meta strong { display: block; margin-bottom: 3px; color: var(--ink); font-family: var(--serif); font-size: 23px; font-weight: 500; text-transform: none; }
 
 .paper-section { scroll-margin-top: 82px; padding: 66px 70px; border-bottom: 1px solid var(--line); }
 .paper-section:last-child { border-bottom: 0; }
@@ -251,9 +245,6 @@ blockquote { margin: 30px 0 0; padding: 22px 28px; border-left: 3px solid var(--
   .paper-header { padding-top: 44px; }
   .paper-kicker { margin-bottom: 32px; flex-direction: column; gap: 5px; }
   .paper-header h1 { font-size: 42px; }
-  .paper-meta { grid-template-columns: 1fr 1fr; }
-  .paper-meta span:nth-child(2) { border-right: 0; }
-  .paper-meta span:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
   .contributions, .concept-grid, .eval-triad, .future-grid, .two-column-notes, .paradigm-columns { grid-template-columns: 1fr; }
   .contributions div, .eval-triad > div, .two-column-notes > div { border-right: 0; border-bottom: 1px solid var(--line); }
   .contributions div:last-child, .eval-triad > div:last-child, .two-column-notes > div:last-child { border-bottom: 0; }

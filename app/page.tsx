@@ -200,14 +200,6 @@ export default function Home() {
           <header className="paper-header">
             <div className="paper-kicker"><span>Interactive survey companion</span><span>arXiv:2312.10997v5</span></div>
             <h1>Retrieval-Augmented Generation for Large Language Models</h1>
-            <p className="subtitle">A visual, interactive reading of the survey by Yunfan Gao et al.</p>
-            <div className="authors">Gao · Xiong · Gao · Jia · Pan · Bi · Dai · Sun · Wang · Wang</div>
-            <div className="paper-meta">
-              <span><strong>26</strong> downstream tasks</span>
-              <span><strong>~50</strong> datasets reviewed</span>
-              <span><strong>3</strong> RAG paradigms</span>
-              <span><strong>3</strong> core stages</span>
-            </div>
           </header>
 
           <section id="abstract" className="paper-section abstract-section">
