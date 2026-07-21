@@ -93,6 +93,20 @@ $env:WRANGLER_LOG_PATH='.wrangler/wrangler.log'
 
 Fix build errors and browser console errors before publishing. Do not add dependencies unless the feature genuinely needs them. Preserve the existing vinext, Vite, and Sites structure.
 
+### GitHub Pages
+
+GitHub Pages uses a separate static export while the existing Sites deployment continues to use vinext.
+
+- `.github/workflows/pages.yml` deploys pushes to `main`.
+- `npm run build:pages` runs the Next.js static export.
+- `next.config.ts` applies `/paper-review` as the base path only inside GitHub Actions.
+- The Pages artifact is written to `out/` and must remain ignored by Git.
+- Keep internal navigation in Next.js `Link` components so the configured base path is applied automatically.
+- Do not hardcode `/paper-review` into application routes; local and Sites builds must continue to work at `/`.
+- Expected public URLs are `/paper-review/` for the library and `/paper-review/<slug>/` for each review.
+
+When the repository name changes, update both `basePath` and `assetPrefix` in `next.config.ts`.
+
 ## Completion checklist
 
 - The paper appears in `app/papers.ts` and on `/`.
@@ -102,4 +116,4 @@ Fix build errors and browser console errors before publishing. Do not add depend
 - Shared design tokens and components are preserved.
 - Keyboard, reduced-motion, tablet, and mobile behavior are accounted for.
 - The production build succeeds.
-
+- The GitHub Pages static export succeeds when deployment configuration changes.
